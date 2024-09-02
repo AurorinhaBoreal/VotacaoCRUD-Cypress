@@ -8,7 +8,7 @@ Cypress.Commands.add("createUser", ({firstName, surname, cpf}) => {
 })
 
 Cypress.Commands.add("deleteUser", (cpf) => {
-    cy.request('DELETE', `http://localhost:8080/user/${cpf}`)
+    cy.request('DELETE', `https://votacaocrud.onrender.com/user/${cpf}`)
 })
 
 Cypress.Commands.add("validateUser", (cpf) => {

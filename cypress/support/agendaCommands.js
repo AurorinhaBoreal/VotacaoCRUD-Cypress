@@ -12,7 +12,12 @@ Cypress.Commands.add("createAgenda", ({category, question, duration, userCpf}) =
 
     cy.get('[data-cy="CA-button-CA"]').click()
     
-    cy.reload()
+    cy.updateContent()
+})
+
+Cypress.Commands.add("updateContent", () => {
+    cy.visit("/")
+    cy.get('[data-cy="buttonSignUp-AA"]').click()
 })
 
 Cypress.Commands.add("endAgenda", (question, cpf) => {

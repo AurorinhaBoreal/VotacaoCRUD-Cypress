@@ -4,7 +4,7 @@ module.exports = defineConfig({
   viewportWidth: 1200,
   viewportHeight: 660,
   e2e: {
-    baseUrl: "http://localhost:5173",
+    baseUrl: "https://votacao-front.onrender.com/",
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
